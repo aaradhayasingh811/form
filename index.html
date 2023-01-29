@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact List</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+  <form id="form">
+    <label for="fname">Name:</label>
+    <!-- <label for="lname">Last Name:</label> -->
+    <div id="name">
+    <input type="text" id="fname" required class="ïnline" placeholder="first name">
+    <input type="text" id="lname" required class="ïnline" placeholder="last name">
+    </div>
+    <br>
+
+    <label for="contact">Contact Number:</label>
+    <input type="text" id="contact" required>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <br>
+
+  <input type="text" id="search" placeholder="Search by name">
+  <i class="fa fa-search" aria-hidden="true"></i>
+    <h1 id="h">*Click on Name column to sort<h1>
+
+  <table id="table">
+    <thead>
+      <tr>
+        <th>Serial No</th>
+        <th id="sor">Name 
+          
+        <th>Contact Number</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+  </div>
+</body>
+</html>
